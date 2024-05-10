@@ -1,0 +1,10 @@
+12:26:21 **** Incremental Build of configuration Debug for project RX_ModeToSTM32F103C6T6A ****
+make -j8 all 
+arm-none-eabi-size  RX_ModeToSTM32F103C6T6A.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10560	     20	   1812	  12392	   3068	RX_ModeToSTM32F103C6T6A.elf
+Finished building: default.size.stdout
+ 
+
+12:26:21 Build Finished. 0 errors, 0 warnings. (took 415ms)
+

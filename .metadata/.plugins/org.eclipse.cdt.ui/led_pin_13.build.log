@@ -1,0 +1,10 @@
+12:01:02 **** Incremental Build of configuration Debug for project led_pin_13 ****
+make -j8 all 
+arm-none-eabi-size  led_pin_13.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4644	     12	   1572	   6228	   1854	led_pin_13.elf
+Finished building: default.size.stdout
+ 
+
+12:01:02 Build Finished. 0 errors, 0 warnings. (took 393ms)
+
