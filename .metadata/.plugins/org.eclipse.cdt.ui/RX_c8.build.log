@@ -1,10 +1,10 @@
-09:53:35 **** Incremental Build of configuration Debug for project RX_c8 ****
+18:47:26 **** Incremental Build of configuration Debug for project RX_c8 ****
 make -j8 all 
 arm-none-eabi-size  RX_c8.elf 
    text	   data	    bss	    dec	    hex	filename
-  11004	     20	   1820	  12844	   322c	RX_c8.elf
+  23828	     24	   8416	  32268	   7e0c	RX_c8.elf
 Finished building: default.size.stdout
  
 
-09:53:35 Build Finished. 0 errors, 0 warnings. (took 510ms)
+18:47:27 Build Finished. 0 errors, 0 warnings. (took 503ms)
 

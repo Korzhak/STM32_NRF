@@ -1,85 +1,210 @@
-13:01:51 **** Incremental Build of configuration Debug for project RX_c8 ****
+19:48:43 **** Incremental Build of configuration Debug for project RX_c8 ****
 make -j8 all 
-arm-none-eabi-gcc "../Core/Src/FourDigit74HC595.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/FourDigit74HC595.d" -MT"Core/Src/FourDigit74HC595.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/FourDigit74HC595.o"
-../Core/Src/FourDigit74HC595.c: In function 'intToChar':
-../Core/Src/FourDigit74HC595.c:216:22: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
-  216 |   char* str = (char*)malloc(8 * sizeof(char)); // Allocate 8 bytes initially
-      |                      ^~~~~~
-../Core/Src/FourDigit74HC595.c:14:1: note: include '<stdlib.h>' or provide a declaration of 'malloc'
-   13 | #include "FourDigit74HC595.h"
-  +++ |+#include <stdlib.h>
-   14 | 
-../Core/Src/FourDigit74HC595.c:216:22: warning: incompatible implicit declaration of built-in function 'malloc' [-Wbuiltin-declaration-mismatch]
-  216 |   char* str = (char*)malloc(8 * sizeof(char)); // Allocate 8 bytes initially
-      |                      ^~~~~~
-../Core/Src/FourDigit74HC595.c:216:22: note: include '<stdlib.h>' or provide a declaration of 'malloc'
-../Core/Src/FourDigit74HC595.c:238:29: warning: implicit declaration of function 'realloc' [-Wimplicit-function-declaration]
-  238 |       char* newStr = (char*)realloc(str, (i + 8) * sizeof(char));
-      |                             ^~~~~~~
-../Core/Src/FourDigit74HC595.c:238:29: note: include '<stdlib.h>' or provide a declaration of 'realloc'
-../Core/Src/FourDigit74HC595.c:238:29: warning: incompatible implicit declaration of built-in function 'realloc' [-Wbuiltin-declaration-mismatch]
-../Core/Src/FourDigit74HC595.c:238:29: note: include '<stdlib.h>' or provide a declaration of 'realloc'
-../Core/Src/FourDigit74HC595.c:240:9: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
-  240 |         free(str); // Free the previously allocated memory
-      |         ^~~~
-../Core/Src/FourDigit74HC595.c:240:9: note: include '<stdlib.h>' or provide a declaration of 'free'
-../Core/Src/FourDigit74HC595.c:240:9: warning: incompatible implicit declaration of built-in function 'free' [-Wbuiltin-declaration-mismatch]
-../Core/Src/FourDigit74HC595.c:240:9: note: include '<stdlib.h>' or provide a declaration of 'free'
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
 arm-none-eabi-g++ -o "RX_c8.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Work\Stm32\RX_c8\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RX_c8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 Finished building target: RX_c8.elf
  
 arm-none-eabi-size  RX_c8.elf 
 arm-none-eabi-objdump -h -S RX_c8.elf  > "RX_c8.list"
    text	   data	    bss	    dec	    hex	filename
-  11520	    112	   2152	  13784	   35d8	RX_c8.elf
+  23812	     24	   8416	  32252	   7dfc	RX_c8.elf
 Finished building: default.size.stdout
  
 Finished building: RX_c8.list
  
-13:02:00 **** Incremental Build of configuration Debug for project RX_c8 ****
+19:48:57 **** Incremental Build of configuration Debug for project RX_c8 ****
 make -j8 all 
 arm-none-eabi-size  RX_c8.elf 
    text	   data	    bss	    dec	    hex	filename
-  11520	    112	   2152	  13784	   35d8	RX_c8.elf
+  23812	     24	   8416	  32252	   7dfc	RX_c8.elf
 Finished building: default.size.stdout
  
-13:06:33 **** Incremental Build of configuration Debug for project RX_c8 ****
+19:49:13 **** Incremental Build of configuration Debug for project RX_c8 ****
 make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:134:38: warning: implicit declaration of function 'intToChar' [-Wimplicit-function-declaration]
-  134 |                          char* str = intToChar(counter);
-      |                                      ^~~~~~~~~
-../Core/Src/main.c:134:38: warning: initialization of 'char *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+arm-none-eabi-size  RX_c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+  23812	     24	   8416	  32252	   7dfc	RX_c8.elf
+Finished building: default.size.stdout
+ 
+19:50:32 **** Incremental Build of configuration Debug for project RX_c8 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
 arm-none-eabi-g++ -o "RX_c8.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Work\Stm32\RX_c8\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RX_c8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 Finished building target: RX_c8.elf
  
 arm-none-eabi-size  RX_c8.elf 
 arm-none-eabi-objdump -h -S RX_c8.elf  > "RX_c8.list"
    text	   data	    bss	    dec	    hex	filename
-  11616	    112	   2152	  13880	   3638	RX_c8.elf
+  23812	     24	   8416	  32252	   7dfc	RX_c8.elf
 Finished building: default.size.stdout
  
 Finished building: RX_c8.list
  
-09:53:12 **** Incremental Build of configuration Debug for project RX_c8 ****
+19:55:56 **** Incremental Build of configuration Debug for project RX_c8 ****
 make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
 arm-none-eabi-g++ -o "RX_c8.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Work\Stm32\RX_c8\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RX_c8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 Finished building target: RX_c8.elf
  
 arm-none-eabi-size  RX_c8.elf 
 arm-none-eabi-objdump -h -S RX_c8.elf  > "RX_c8.list"
    text	   data	    bss	    dec	    hex	filename
-  11004	     20	   1820	  12844	   322c	RX_c8.elf
+  23796	     24	   8416	  32236	   7dec	RX_c8.elf
 Finished building: default.size.stdout
  
 Finished building: RX_c8.list
  
-09:53:35 **** Incremental Build of configuration Debug for project RX_c8 ****
+19:56:42 **** Incremental Build of configuration Debug for project RX_c8 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "RX_c8.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Work\Stm32\RX_c8\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RX_c8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: RX_c8.elf
+ 
+arm-none-eabi-size  RX_c8.elf 
+arm-none-eabi-objdump -h -S RX_c8.elf  > "RX_c8.list"
+   text	   data	    bss	    dec	    hex	filename
+  23812	     24	   8416	  32252	   7dfc	RX_c8.elf
+Finished building: default.size.stdout
+ 
+Finished building: RX_c8.list
+ 
+19:57:20 **** Incremental Build of configuration Debug for project RX_c8 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "RX_c8.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Work\Stm32\RX_c8\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RX_c8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: RX_c8.elf
+ 
+arm-none-eabi-size  RX_c8.elf 
+arm-none-eabi-objdump -h -S RX_c8.elf  > "RX_c8.list"
+   text	   data	    bss	    dec	    hex	filename
+  23812	     24	   8416	  32252	   7dfc	RX_c8.elf
+Finished building: default.size.stdout
+ 
+Finished building: RX_c8.list
+ 
+20:01:21 **** Incremental Build of configuration Debug for project RX_c8 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "RX_c8.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Work\Stm32\RX_c8\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RX_c8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: RX_c8.elf
+ 
+arm-none-eabi-size  RX_c8.elf 
+arm-none-eabi-objdump -h -S RX_c8.elf  > "RX_c8.list"
+   text	   data	    bss	    dec	    hex	filename
+  23812	     24	   8416	  32252	   7dfc	RX_c8.elf
+Finished building: default.size.stdout
+ 
+Finished building: RX_c8.list
+ 
+17:56:36 **** Incremental Build of configuration Debug for project RX_c8 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "RX_c8.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Work\Stm32\RX_c8\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RX_c8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: RX_c8.elf
+ 
+arm-none-eabi-size  RX_c8.elf 
+arm-none-eabi-objdump -h -S RX_c8.elf  > "RX_c8.list"
+   text	   data	    bss	    dec	    hex	filename
+  23812	     24	   8416	  32252	   7dfc	RX_c8.elf
+Finished building: default.size.stdout
+ 
+Finished building: RX_c8.list
+ 
+17:58:47 **** Incremental Build of configuration Debug for project RX_c8 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "RX_c8.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Work\Stm32\RX_c8\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RX_c8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: RX_c8.elf
+ 
+arm-none-eabi-size  RX_c8.elf 
+arm-none-eabi-objdump -h -S RX_c8.elf  > "RX_c8.list"
+   text	   data	    bss	    dec	    hex	filename
+  23812	     24	   8416	  32252	   7dfc	RX_c8.elf
+Finished building: default.size.stdout
+ 
+Finished building: RX_c8.list
+ 
+18:27:11 **** Incremental Build of configuration Debug for project RX_c8 ****
 make -j8 all 
 arm-none-eabi-size  RX_c8.elf 
    text	   data	    bss	    dec	    hex	filename
-  11004	     20	   1820	  12844	   322c	RX_c8.elf
+  23812	     24	   8416	  32252	   7dfc	RX_c8.elf
 Finished building: default.size.stdout
+ 
+18:39:32 **** Incremental Build of configuration Debug for project RX_c8 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "RX_c8.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Work\Stm32\RX_c8\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RX_c8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: RX_c8.elf
+ 
+arm-none-eabi-size  RX_c8.elf 
+arm-none-eabi-objdump -h -S RX_c8.elf  > "RX_c8.list"
+   text	   data	    bss	    dec	    hex	filename
+  23812	     24	   8416	  32252	   7dfc	RX_c8.elf
+Finished building: default.size.stdout
+ 
+Finished building: RX_c8.list
+ 
+18:40:55 **** Incremental Build of configuration Debug for project RX_c8 ****
+make -j8 all 
+arm-none-eabi-size  RX_c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+  23812	     24	   8416	  32252	   7dfc	RX_c8.elf
+Finished building: default.size.stdout
+ 
+18:46:30 **** Incremental Build of configuration Debug for project RX_c8 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "RX_c8.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Work\Stm32\RX_c8\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RX_c8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: RX_c8.elf
+ 
+arm-none-eabi-size  RX_c8.elf 
+arm-none-eabi-objdump -h -S RX_c8.elf  > "RX_c8.list"
+   text	   data	    bss	    dec	    hex	filename
+  23828	     24	   8416	  32268	   7e0c	RX_c8.elf
+Finished building: default.size.stdout
+ 
+Finished building: RX_c8.list
+ 
+18:46:57 **** Incremental Build of configuration Debug for project RX_c8 ****
+make -j8 all 
+arm-none-eabi-size  RX_c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+  23828	     24	   8416	  32268	   7e0c	RX_c8.elf
+Finished building: default.size.stdout
+ 
+18:47:26 **** Incremental Build of configuration Debug for project RX_c8 ****
+make -j8 all 
+arm-none-eabi-size  RX_c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+  23828	     24	   8416	  32268	   7e0c	RX_c8.elf
+Finished building: default.size.stdout
+ 
+19:07:25 **** Incremental Build of configuration Debug for project TX_c6 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "TX_c6.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Work\Stm32\TX_c6\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TX_c6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: TX_c6.elf
+ 
+arm-none-eabi-size  TX_c6.elf 
+arm-none-eabi-objdump -h -S TX_c6.elf  > "TX_c6.list"
+   text	   data	    bss	    dec	    hex	filename
+   9820	     36	   1732	  11588	   2d44	TX_c6.elf
+Finished building: default.size.stdout
+ 
+Finished building: TX_c6.list
+ 
+19:16:23 **** Incremental Build of configuration Debug for project TX_c6 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "TX_c6.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Work\Stm32\TX_c6\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TX_c6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: TX_c6.elf
+ 
+arm-none-eabi-size  TX_c6.elf 
+arm-none-eabi-objdump -h -S TX_c6.elf  > "TX_c6.list"
+   text	   data	    bss	    dec	    hex	filename
+   9684	     36	   1732	  11452	   2cbc	TX_c6.elf
+Finished building: default.size.stdout
+ 
+Finished building: TX_c6.list
  

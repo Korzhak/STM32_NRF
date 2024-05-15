@@ -1,0 +1,103 @@
+2024-05-13 12:25:02,175 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 456657960 Bytes (775946240)
+2024-05-13 12:25:03,389 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 472506456 Bytes (775946240)
+2024-05-13 12:25:04,080 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 502273064 Bytes (775946240)
+2024-05-13 12:25:04,393 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2024-05-13 12:25:04,393 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2024-05-13 12:25:04,394 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-05-13 12:25:04,394 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-05-13 12:25:04,394 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-05-13 12:25:04,394 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-05-13 12:25:04,395 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-05-13 12:25:04,397 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.15.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.1.202404110753\\db\
+2024-05-13 12:25:04,585 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_c8\MXTmpFiles\license.tmp_save
+2024-05-13 12:25:04,706 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_c8\MXTmpFiles\license.tmp
+2024-05-13 12:25:04,769 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_c8\MXTmpFiles\gpio.tmp_save
+2024-05-13 12:25:04,909 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_c8\MXTmpFiles\gpio.tmp
+2024-05-13 12:25:05,115 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_c8\Core\Src\stm32f1xx_it.c_save
+2024-05-13 12:25:05,331 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_c8\Core\Src\stm32f1xx_it.c
+2024-05-13 12:25:05,355 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_c8\Core\Inc\stm32f1xx_it.h_save
+2024-05-13 12:25:05,467 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_c8\Core\Inc\stm32f1xx_it.h
+2024-05-13 12:25:05,507 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_c8\Core\Src\stm32f1xx_hal_msp.c_save
+2024-05-13 12:25:05,691 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_c8\Core\Src\stm32f1xx_hal_msp.c
+2024-05-13 12:25:05,707 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_c8\MXTmpFiles\system.tmp_save
+2024-05-13 12:25:05,807 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_c8\MXTmpFiles\system.tmp
+2024-05-13 12:25:05,842 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Work\Stm32\RX_c8\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-05-13 12:25:05,974 [INFO] CodeEngine:335 - Generated code: C:\Work\Stm32\RX_c8\Core\Inc\stm32f1xx_hal_conf.h
+2024-05-13 12:25:06,039 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_c8\Core\Inc\main.h_save
+2024-05-13 12:25:06,160 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_c8\Core\Inc\main.h
+2024-05-13 12:25:06,193 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_c8\Core\Src\main.c_save
+2024-05-13 12:25:06,387 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_c8\Core\Src\main.c
+2024-05-13 12:25:06,894 [INFO] ProjectBuilder:3163 - Time for Copy HAL[1] : 285mS.
+2024-05-13 12:25:06,898 [INFO] ProjectBuilder:4736 - Project Generator version: 4.3.0-B58
+2024-05-13 12:25:07,022 [INFO] ConfigFileManager:1503 - The Die is : DIE410
+2024-05-13 12:25:09,542 [INFO] ProjectBuilder:5002 - Time for Generating toolchain IDE Files: 2644mS.
+2024-05-13 12:25:09,543 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 1mS.
+2024-05-13 12:25:09,552 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 0mS.
+2024-05-13 20:10:45,899 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 591477008 Bytes (775946240)
+2024-05-13 20:10:46,960 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 262566336 Bytes (775946240)
+2024-05-13 20:10:49,429 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 352860760 Bytes (775946240)
+2024-05-13 20:10:49,719 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2024-05-13 20:10:49,719 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-05-13 20:10:49,719 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-05-13 20:10:49,719 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-05-13 20:10:49,720 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-05-13 20:10:49,720 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-05-13 20:10:49,721 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.15.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.1.202404110753\\db\
+2024-05-13 20:10:49,868 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_c8\MXTmpFiles\license.tmp_save
+2024-05-13 20:10:49,986 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_c8\MXTmpFiles\license.tmp
+2024-05-13 20:10:50,033 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_c8\MXTmpFiles\gpio.tmp_save
+2024-05-13 20:10:50,159 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_c8\MXTmpFiles\gpio.tmp
+2024-05-13 20:10:50,344 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_c8\Core\Src\stm32f1xx_it.c_save
+2024-05-13 20:10:50,561 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_c8\Core\Src\stm32f1xx_it.c
+2024-05-13 20:10:50,590 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_c8\Core\Inc\stm32f1xx_it.h_save
+2024-05-13 20:10:50,716 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_c8\Core\Inc\stm32f1xx_it.h
+2024-05-13 20:10:50,753 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_c8\Core\Src\stm32f1xx_hal_msp.c_save
+2024-05-13 20:10:50,932 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_c8\Core\Src\stm32f1xx_hal_msp.c
+2024-05-13 20:10:50,948 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_c8\MXTmpFiles\system.tmp_save
+2024-05-13 20:10:51,037 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_c8\MXTmpFiles\system.tmp
+2024-05-13 20:10:51,071 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Work\Stm32\RX_c8\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-05-13 20:10:51,206 [INFO] CodeEngine:335 - Generated code: C:\Work\Stm32\RX_c8\Core\Inc\stm32f1xx_hal_conf.h
+2024-05-13 20:10:51,292 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_c8\Core\Inc\main.h_save
+2024-05-13 20:10:51,432 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_c8\Core\Inc\main.h
+2024-05-13 20:10:51,465 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_c8\Core\Src\main.c_save
+2024-05-13 20:10:51,642 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_c8\Core\Src\main.c
+2024-05-13 20:10:52,270 [INFO] ProjectBuilder:3163 - Time for Copy HAL[1] : 262mS.
+2024-05-13 20:10:52,275 [INFO] ProjectBuilder:4736 - Project Generator version: 4.3.0-B58
+2024-05-13 20:10:52,382 [INFO] ConfigFileManager:1503 - The Die is : DIE410
+2024-05-13 20:10:54,326 [INFO] ProjectBuilder:5002 - Time for Generating toolchain IDE Files: 2051mS.
+2024-05-13 20:10:54,327 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 0mS.
+2024-05-13 20:10:54,332 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 0mS.
+2024-05-13 20:50:39,768 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 351425640 Bytes (775946240)
+2024-05-13 20:50:41,625 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 367099856 Bytes (775946240)
+2024-05-13 20:50:42,309 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 424857280 Bytes (775946240)
+2024-05-13 20:50:42,548 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2024-05-13 20:50:42,548 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-05-13 20:50:42,548 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-05-13 20:50:42,548 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-05-13 20:50:42,549 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-05-13 20:50:42,549 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-05-13 20:50:42,550 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.15.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.1.202404110753\\db\
+2024-05-13 20:50:42,733 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_c8\MXTmpFiles\license.tmp_save
+2024-05-13 20:50:42,843 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_c8\MXTmpFiles\license.tmp
+2024-05-13 20:50:42,889 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_c8\MXTmpFiles\gpio.tmp_save
+2024-05-13 20:50:42,992 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_c8\MXTmpFiles\gpio.tmp
+2024-05-13 20:50:43,134 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_c8\Core\Src\stm32f1xx_it.c_save
+2024-05-13 20:50:43,315 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_c8\Core\Src\stm32f1xx_it.c
+2024-05-13 20:50:43,335 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_c8\Core\Inc\stm32f1xx_it.h_save
+2024-05-13 20:50:43,422 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_c8\Core\Inc\stm32f1xx_it.h
+2024-05-13 20:50:43,458 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_c8\Core\Src\stm32f1xx_hal_msp.c_save
+2024-05-13 20:50:43,601 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_c8\Core\Src\stm32f1xx_hal_msp.c
+2024-05-13 20:50:43,609 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_c8\MXTmpFiles\system.tmp_save
+2024-05-13 20:50:43,700 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_c8\MXTmpFiles\system.tmp
+2024-05-13 20:50:43,732 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Work\Stm32\RX_c8\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-05-13 20:50:43,850 [INFO] CodeEngine:335 - Generated code: C:\Work\Stm32\RX_c8\Core\Inc\stm32f1xx_hal_conf.h
+2024-05-13 20:50:43,907 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_c8\Core\Inc\main.h_save
+2024-05-13 20:50:44,009 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_c8\Core\Inc\main.h
+2024-05-13 20:50:44,040 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_c8\Core\Src\main.c_save
+2024-05-13 20:50:44,202 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_c8\Core\Src\main.c
+2024-05-13 20:50:44,650 [INFO] ProjectBuilder:3163 - Time for Copy HAL[1] : 221mS.
+2024-05-13 20:50:44,650 [INFO] ProjectBuilder:4736 - Project Generator version: 4.3.0-B58
+2024-05-13 20:50:44,759 [INFO] ConfigFileManager:1503 - The Die is : DIE410
+2024-05-13 20:50:46,186 [INFO] ProjectBuilder:5002 - Time for Generating toolchain IDE Files: 1536mS.
+2024-05-13 20:50:46,187 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 1mS.
+2024-05-13 20:50:46,194 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 0mS.

@@ -1,6 +1,0 @@
-../Core/Src/FourDigit74HC595.c:37:13:FourDigit74HC595_sendData	3
-../Core/Src/FourDigit74HC595.c:65:6:FourDigit74HC595_sendOneDigit	6
-../Core/Src/FourDigit74HC595.c:110:6:FourDigit74HC595_sendNumber	9
-../Core/Src/FourDigit74HC595.c:176:6:FourDigit74HC595_sendNumberInt	10
-../Core/Src/FourDigit74HC595.c:214:7:intToChar	6
-../Core/Src/FourDigit74HC595.c:253:6:FourDigit74HC595_sendNumberNew	14
