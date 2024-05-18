@@ -116,7 +116,7 @@ int main(void)
 
 		          HAL_Delay(50);
 
-	              buttonState = !HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_1);
+	              buttonState = HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_1);
 
 	              if (buttonState != lastButtonState) {
 
