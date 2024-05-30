@@ -62,7 +62,7 @@
    
    - STM32BluePill до LED: `5V - VCC`, `GND - GND`, `PA11 - SCLK`, `PA10 - RCLK`, `PA9 - DIO`  
 
-   ![](img/stm32_nrf_led.jpg)
+   ![](img/stm32_nrf_led.bmp)
 
 3. Переходимо в ***NRF24L01.c*** і робимо заміну на свої значення, якщо потрібно
 
@@ -114,7 +114,7 @@
    
    - STM32BluePill до Макетної плати і SS-5GL: `3.3V - +`, `GND - -`, `PB1 - Макетна плата` 
 
-   ![](img/stm32_nrf_switches.jpg)
+   ![](img/stm32_nrf_switches.bmp)
 
 3. Переходимо в ***NRF24L01.c*** і робимо заміну на свої значення, якщо потрібно
 
