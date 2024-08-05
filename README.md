@@ -62,7 +62,7 @@
    
    - Connect  STM32BluePill to LED: `5V - VCC`, `GND - GND`, `PA11 - SCLK`, `PA10 - RCLK`, `PA9 - DIO`  
 
-   ![](img/stm32_nrf_led.jpg)
+   ![](img/stm32_nrf_led.bmp)
 
 3. Modify  ***NRF24L01.c*** with your specific values if needed:
 
@@ -112,7 +112,7 @@
    
    - Connect STM32BluePill to Breadboard and SS-5GL: `3.3V - +`, `GND - -`, `PB1 - Breadboard` 
 
-   ![](img/stm32_nrf_switches.jpg)
+   ![](img/stm32_nrf_switches.bmp)
 
 3. Modify ***main.c*** with your specific values if needed:
 
