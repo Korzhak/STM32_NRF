@@ -120,7 +120,9 @@ int main(void)
 
 	              if (buttonState != lastButtonState) {
 
-	                  if (buttonState == GPIO_PIN_RESET) NRF24_Transmit(TxData);
+	                  if (buttonState == GPIO_PIN_RESET) {
+	                	  NRF24_Transmit(TxData);
+	                  }
 
 	              }
 	          }
