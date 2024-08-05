@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;RX_c8/Core/Inc/flash_operations&apos; to &apos;flash_operations.h&apos;" description="Rename resource &apos;flash_operations&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Inc/flash_operations" name="flash_operations.h" stamp="1717612278839" updateReferences="true"/>
+</session>

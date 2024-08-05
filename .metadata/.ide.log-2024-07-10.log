@@ -1,0 +1,45 @@
+2024-07-10 22:51:24,026 [WARN] IP:2120 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-07-10 22:51:24,042 [WARN] IP:2120 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-07-10 22:51:24,043 [WARN] IP:2120 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-07-10 22:51:24,043 [WARN] IP:2120 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-07-10 22:51:24,083 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-07-10 22:51:24,126 [WARN] IP:2120 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-07-10 22:51:24,126 [WARN] IP:2120 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-07-10 22:51:24,139 [WARN] IP:2120 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-07-10 22:51:24,140 [WARN] IP:2120 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-07-10 22:53:12,678 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 744151176 Bytes (1073741824)
+2024-07-10 22:53:13,736 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 715418992 Bytes (1073741824)
+2024-07-10 22:53:14,554 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 766470032 Bytes (1073741824)
+2024-07-10 22:53:14,879 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-07-10 22:53:14,879 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-07-10 22:53:14,879 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-07-10 22:53:14,880 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-07-10 22:53:14,880 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-07-10 22:53:14,880 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: I2C
+2024-07-10 22:53:14,882 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.15.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.1.202404110753\\db\
+2024-07-10 22:53:14,884 [WARN] IP:2120 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-07-10 22:53:14,885 [WARN] IP:2120 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-07-10 22:53:15,073 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\test_spi_f401\MXTmpFiles\license.tmp_save
+2024-07-10 22:53:15,233 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\test_spi_f401\MXTmpFiles\license.tmp
+2024-07-10 22:53:15,286 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\test_spi_f401\MXTmpFiles\gpio.tmp_save
+2024-07-10 22:53:15,428 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\test_spi_f401\MXTmpFiles\gpio.tmp
+2024-07-10 22:53:15,634 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\test_spi_f401\Core\Src\stm32f4xx_it.c_save
+2024-07-10 22:53:15,884 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\test_spi_f401\Core\Src\stm32f4xx_it.c
+2024-07-10 22:53:15,915 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\test_spi_f401\Core\Inc\stm32f4xx_it.h_save
+2024-07-10 22:53:16,024 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\test_spi_f401\Core\Inc\stm32f4xx_it.h
+2024-07-10 22:53:16,066 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\test_spi_f401\Core\Src\stm32f4xx_hal_msp.c_save
+2024-07-10 22:53:16,270 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\test_spi_f401\Core\Src\stm32f4xx_hal_msp.c
+2024-07-10 22:53:16,286 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\test_spi_f401\MXTmpFiles\system.tmp_save
+2024-07-10 22:53:16,379 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\test_spi_f401\MXTmpFiles\system.tmp
+2024-07-10 22:53:16,420 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Work\Stm32\test_spi_f401\Core\Inc\stm32f4xx_hal_conf.h_save
+2024-07-10 22:53:16,551 [INFO] CodeEngine:335 - Generated code: C:\Work\Stm32\test_spi_f401\Core\Inc\stm32f4xx_hal_conf.h
+2024-07-10 22:53:16,627 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\test_spi_f401\Core\Inc\main.h_save
+2024-07-10 22:53:16,792 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\test_spi_f401\Core\Inc\main.h
+2024-07-10 22:53:16,825 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\test_spi_f401\Core\Src\main.c_save
+2024-07-10 22:53:17,018 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\test_spi_f401\Core\Src\main.c
+2024-07-10 22:53:17,706 [INFO] ProjectBuilder:3163 - Time for Copy HAL[1] : 412mS.
+2024-07-10 22:53:17,713 [INFO] ProjectBuilder:4736 - Project Generator version: 4.3.0-B58
+2024-07-10 22:53:17,855 [INFO] ConfigFileManager:1503 - The Die is : DIE433
+2024-07-10 22:53:20,192 [INFO] ProjectBuilder:5002 - Time for Generating toolchain IDE Files: 2479mS.
+2024-07-10 22:53:20,194 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 1mS.
+2024-07-10 22:53:20,200 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 0mS.

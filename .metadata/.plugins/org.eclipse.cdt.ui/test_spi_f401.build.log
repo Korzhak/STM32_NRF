@@ -1,0 +1,10 @@
+19:18:22 **** Incremental Build of configuration Debug for project test_spi_f401 ****
+make -j8 all 
+arm-none-eabi-size  test_spi_f401.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13204	     20	   1732	  14956	   3a6c	test_spi_f401.elf
+Finished building: default.size.stdout
+ 
+
+19:18:23 Build Finished. 0 errors, 0 warnings. (took 491ms)
+

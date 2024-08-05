@@ -1,0 +1,80 @@
+2024-07-01 18:12:41,007 [INFO] Gpio:277 - dependency for GPIO [RCC, SPI1, SYS]
+2024-07-01 18:14:19,471 [INFO] Gpio:277 - dependency for GPIO [RCC, SPI1, SYS]
+2024-07-01 18:14:22,956 [INFO] Gpio:277 - dependency for GPIO [RCC, SPI1, SYS]
+2024-07-01 18:14:26,147 [INFO] Gpio:277 - dependency for GPIO [RCC, SPI1, SYS]
+2024-07-01 18:16:09,034 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 352707544 Bytes (989855744)
+2024-07-01 18:16:09,913 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 372108248 Bytes (989855744)
+2024-07-01 18:16:10,710 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 447079384 Bytes (989855744)
+2024-07-01 18:16:12,536 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2024-07-01 18:16:12,536 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-07-01 18:16:12,536 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: FREERTOS
+2024-07-01 18:16:12,536 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-07-01 18:16:12,536 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-07-01 18:16:12,536 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-07-01 18:16:12,538 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.15.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.1.202404110753\\db\
+2024-07-01 18:16:12,759 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_CDU6\MXTmpFiles\license.tmp_save
+2024-07-01 18:16:12,987 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_CDU6\MXTmpFiles\license.tmp
+2024-07-01 18:16:13,050 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_CDU6\MXTmpFiles\gpio.tmp_save
+2024-07-01 18:16:13,214 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_CDU6\MXTmpFiles\gpio.tmp
+2024-07-01 18:16:13,366 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2024-07-01 18:16:13,394 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_CDU6\MXTmpFiles\rtos_inc.tmp_save
+2024-07-01 18:16:13,525 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_CDU6\MXTmpFiles\rtos_inc.tmp
+2024-07-01 18:16:13,543 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_CDU6\MXTmpFiles\rtos_kernelInit.tmp_save
+2024-07-01 18:16:13,662 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_CDU6\MXTmpFiles\rtos_kernelInit.tmp
+2024-07-01 18:16:13,679 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_CDU6\MXTmpFiles\rtos_kernelStart.tmp_save
+2024-07-01 18:16:13,799 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_CDU6\MXTmpFiles\rtos_kernelStart.tmp
+2024-07-01 18:16:13,820 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_CDU6\MXTmpFiles\rtos_typedefs.tmp_save
+2024-07-01 18:16:13,925 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_CDU6\MXTmpFiles\rtos_typedefs.tmp
+2024-07-01 18:16:13,944 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_CDU6\MXTmpFiles\rtos_vars.tmp_save
+2024-07-01 18:16:14,100 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_CDU6\MXTmpFiles\rtos_vars.tmp
+2024-07-01 18:16:14,121 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_CDU6\MXTmpFiles\rtos_pfp.tmp_save
+2024-07-01 18:16:14,268 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_CDU6\MXTmpFiles\rtos_pfp.tmp
+2024-07-01 18:16:14,292 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_CDU6\MXTmpFiles\rtos_obj_creat.tmp_save
+2024-07-01 18:16:14,460 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_CDU6\MXTmpFiles\rtos_obj_creat.tmp
+2024-07-01 18:16:14,481 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_CDU6\MXTmpFiles\rtos_default_thread.tmp_save
+2024-07-01 18:16:14,634 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_CDU6\MXTmpFiles\rtos_default_thread.tmp
+2024-07-01 18:16:14,660 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_CDU6\MXTmpFiles\rtos_threads.tmp_save
+2024-07-01 18:16:14,808 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_CDU6\MXTmpFiles\rtos_threads.tmp
+2024-07-01 18:16:14,822 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2024-07-01 18:16:14,847 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_CDU6\MXTmpFiles\rtos_inc.tmp_save
+2024-07-01 18:16:14,978 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_CDU6\MXTmpFiles\rtos_inc.tmp
+2024-07-01 18:16:14,988 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_CDU6\MXTmpFiles\rtos_kernelInit.tmp_save
+2024-07-01 18:16:15,098 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_CDU6\MXTmpFiles\rtos_kernelInit.tmp
+2024-07-01 18:16:15,112 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_CDU6\MXTmpFiles\rtos_kernelStart.tmp_save
+2024-07-01 18:16:15,224 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_CDU6\MXTmpFiles\rtos_kernelStart.tmp
+2024-07-01 18:16:15,232 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_CDU6\MXTmpFiles\rtos_typedefs.tmp_save
+2024-07-01 18:16:15,326 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_CDU6\MXTmpFiles\rtos_typedefs.tmp
+2024-07-01 18:16:15,352 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_CDU6\MXTmpFiles\rtos_vars.tmp_save
+2024-07-01 18:16:15,451 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_CDU6\MXTmpFiles\rtos_vars.tmp
+2024-07-01 18:16:15,465 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_CDU6\MXTmpFiles\rtos_pfp.tmp_save
+2024-07-01 18:16:15,567 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_CDU6\MXTmpFiles\rtos_pfp.tmp
+2024-07-01 18:16:15,587 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_CDU6\MXTmpFiles\rtos_obj_creat.tmp_save
+2024-07-01 18:16:15,690 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_CDU6\MXTmpFiles\rtos_obj_creat.tmp
+2024-07-01 18:16:15,699 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_CDU6\MXTmpFiles\rtos_default_thread.tmp_save
+2024-07-01 18:16:15,796 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_CDU6\MXTmpFiles\rtos_default_thread.tmp
+2024-07-01 18:16:15,806 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_CDU6\MXTmpFiles\rtos_threads.tmp_save
+2024-07-01 18:16:15,902 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_CDU6\MXTmpFiles\rtos_threads.tmp
+2024-07-01 18:16:15,937 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_CDU6\Core\Inc\FreeRTOSConfig.h_save
+2024-07-01 18:16:16,094 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_CDU6\Core\Inc\FreeRTOSConfig.h
+2024-07-01 18:16:16,131 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_CDU6\Core\Src\freertos.c_save
+2024-07-01 18:16:16,278 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_CDU6\Core\Src\freertos.c
+2024-07-01 18:16:16,324 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_CDU6\Core\Src\stm32f4xx_it.c_save
+2024-07-01 18:16:16,604 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_CDU6\Core\Src\stm32f4xx_it.c
+2024-07-01 18:16:16,647 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_CDU6\Core\Inc\stm32f4xx_it.h_save
+2024-07-01 18:16:16,803 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_CDU6\Core\Inc\stm32f4xx_it.h
+2024-07-01 18:16:16,849 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_CDU6\Core\Src\stm32f4xx_hal_msp.c_save
+2024-07-01 18:16:17,063 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_CDU6\Core\Src\stm32f4xx_hal_msp.c
+2024-07-01 18:16:17,084 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_CDU6\MXTmpFiles\system.tmp_save
+2024-07-01 18:16:17,205 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_CDU6\MXTmpFiles\system.tmp
+2024-07-01 18:16:17,253 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Work\Stm32\RX_CDU6\Core\Inc\stm32f4xx_hal_conf.h_save
+2024-07-01 18:16:17,417 [INFO] CodeEngine:335 - Generated code: C:\Work\Stm32\RX_CDU6\Core\Inc\stm32f4xx_hal_conf.h
+2024-07-01 18:16:17,504 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_CDU6\Core\Inc\main.h_save
+2024-07-01 18:16:17,703 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_CDU6\Core\Inc\main.h
+2024-07-01 18:16:17,756 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Work\Stm32\RX_CDU6\Core\Src\main.c_save
+2024-07-01 18:16:18,017 [INFO] CodeEngine:279 - Generated code: C:\Work\Stm32\RX_CDU6\Core\Src\main.c
+2024-07-01 18:16:19,075 [INFO] ProjectBuilder:3163 - Time for Copy HAL[1] : 691mS.
+2024-07-01 18:16:19,085 [INFO] ProjectBuilder:4736 - Project Generator version: 4.3.0-B58
+2024-07-01 18:16:19,302 [INFO] ConfigFileManager:1503 - The Die is : DIE433
+2024-07-01 18:16:20,617 [INFO] ProjectBuilder:5002 - Time for Generating toolchain IDE Files: 1532mS.
+2024-07-01 18:16:20,619 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 1mS.
+2024-07-01 18:16:20,632 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 0mS.

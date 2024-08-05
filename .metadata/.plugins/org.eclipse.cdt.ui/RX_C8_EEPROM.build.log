@@ -1,0 +1,10 @@
+19:21:33 **** Incremental Build of configuration Debug for project RX_C8_EEPROM ****
+make -j8 all 
+arm-none-eabi-size  RX_C8_EEPROM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28708	     24	   8568	  37300	   91b4	RX_C8_EEPROM.elf
+Finished building: default.size.stdout
+ 
+
+19:21:34 Build Finished. 0 errors, 0 warnings. (took 489ms)
+
