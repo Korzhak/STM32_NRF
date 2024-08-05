@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;RX_c8/Core/Src/EEPROM.c&apos;" deleteContents="false" description="Delete resource &apos;RX_c8/Core/Src/EEPROM.c&apos;" element1="/RX_c8/Core/Src/EEPROM.c" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1718901006673"/>&#x0A;<refactoring comment="Delete resource &apos;RX_c8/Core/Inc/EEPROM.h&apos;" deleteContents="false" description="Delete resource &apos;RX_c8/Core/Inc/EEPROM.h&apos;" element1="/RX_c8/Core/Inc/EEPROM.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1718901011305"/>
-</session>

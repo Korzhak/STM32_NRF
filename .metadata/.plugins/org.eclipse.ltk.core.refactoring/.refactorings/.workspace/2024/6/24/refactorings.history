@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;RX_c8/Core/Inc/flash_operations.h&apos;" deleteContents="false" description="Delete resource &apos;RX_c8/Core/Inc/flash_operations.h&apos;" element1="/RX_c8/Core/Inc/flash_operations.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1718047232648"/>&#x0A;<refactoring comment="Delete resource &apos;RX_c8/Core/Src/flash_operations.c&apos;" deleteContents="false" description="Delete resource &apos;RX_c8/Core/Src/flash_operations.c&apos;" element1="/RX_c8/Core/Src/flash_operations.c" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1718047247931"/>
-</session>
