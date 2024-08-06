@@ -71,6 +71,13 @@ const osThreadAttr_t myLoopTask_attributes = {
   .stack_size = 128 * 4,
   .priority = (osPriority_t) osPriorityRealtime7,
 };
+/* Definitions for myTaskBtn */
+osThreadId_t myTaskBtnHandle;
+const osThreadAttr_t myTaskBtn_attributes = {
+  .name = "myTaskBtn",
+  .stack_size = 128 * 4,
+  .priority = (osPriority_t) osPriorityRealtime7,
+};
 /* USER CODE BEGIN PV */
 LED74HC595 ledStruct;
 int counter = 0;
@@ -85,6 +92,7 @@ static void MX_I2C1_Init(void);
 void StartDefaultTask(void *argument);
 void StartReciveTask(void *argument);
 void StartLoopTask(void *argument);
+void StartTaskBtn(void *argument);
 
 /* USER CODE BEGIN PFP */
 
@@ -175,6 +183,9 @@ int main(void)
 
   /* creation of myLoopTask */
   myLoopTaskHandle = osThreadNew(StartLoopTask, NULL, &myLoopTask_attributes);
+
+  /* creation of myTaskBtn */
+  myTaskBtnHandle = osThreadNew(StartTaskBtn, NULL, &myTaskBtn_attributes);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
@@ -388,6 +399,12 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
+  /*Configure GPIO pin : PB5 */
+  GPIO_InitStruct.Pin = GPIO_PIN_5;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_PULLDOWN;
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+
 /* USER CODE BEGIN MX_GPIO_Init_2 */
 /* USER CODE END MX_GPIO_Init_2 */
 }
@@ -460,6 +477,40 @@ void StartLoopTask(void *argument)
     osDelay(1);
   }
   /* USER CODE END StartLoopTask */
+}
+
+/* USER CODE BEGIN Header_StartTaskBtn */
+/**
+* @brief Function implementing the myTaskBtn thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_StartTaskBtn */
+void StartTaskBtn(void *argument)
+{
+  /* USER CODE BEGIN StartTaskBtn */
+  /* Infinite loop */
+  uint8_t i = 0;
+  uint8_t btn_state_now;
+  uint8_t btn_state_them;
+  for(;;)
+  {
+	btn_state_now = HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_5);
+	osDelay(20);
+	btn_state_them = HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_5);
+	if (btn_state_now == btn_state_them && btn_state_now + btn_state_them == 2){
+		i++;
+		if(i == 50){
+			EEPROM_Write_NUM (6, 0, 0.0);
+			i = 0, counter = 0;
+			printInt(counter, false);
+		}
+	}
+	else {
+		i = 0;
+	}
+  }
+  /* USER CODE END StartTaskBtn */
 }
 
 /**
