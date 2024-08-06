@@ -25,6 +25,7 @@
 #include "NRF24L01.h"
 #include "LED74HC595.h"
 #include "string.h"
+#include "EEPROM.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -43,6 +44,8 @@
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
+I2C_HandleTypeDef hi2c1;
+
 SPI_HandleTypeDef hspi1;
 
 UART_HandleTypeDef huart2;
@@ -66,7 +69,7 @@ osThreadId_t myLoopTaskHandle;
 const osThreadAttr_t myLoopTask_attributes = {
   .name = "myLoopTask",
   .stack_size = 128 * 4,
-  .priority = (osPriority_t) osPriorityBelowNormal,
+  .priority = (osPriority_t) osPriorityRealtime7,
 };
 /* USER CODE BEGIN PV */
 LED74HC595 ledStruct;
@@ -78,6 +81,7 @@ void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_SPI1_Init(void);
 static void MX_USART2_UART_Init(void);
+static void MX_I2C1_Init(void);
 void StartDefaultTask(void *argument);
 void StartReciveTask(void *argument);
 void StartLoopTask(void *argument);
@@ -88,6 +92,8 @@ void StartLoopTask(void *argument);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+#define DEV_ADDR 0xa0
+
 uint8_t RxAddress[] = {0x00,0xDD,0xCC,0xBB,0xAA};
 uint8_t RxData[32];
 
@@ -126,6 +132,7 @@ int main(void)
   MX_GPIO_Init();
   MX_SPI1_Init();
   MX_USART2_UART_Init();
+  MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
   NRF24_Init();
 
@@ -134,6 +141,8 @@ int main(void)
   NRF24_ReadAll(data);
 
   setUp(&ledStruct, GPIO_PIN_11, GPIOA, GPIO_PIN_10, GPIOA, GPIO_PIN_9, GPIOA);
+
+  counter = (int)EEPROM_Read_NUM (6, 0);
 
 
   /* USER CODE END 2 */
@@ -229,6 +238,40 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
+}
+
+/**
+  * @brief I2C1 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_I2C1_Init(void)
+{
+
+  /* USER CODE BEGIN I2C1_Init 0 */
+
+  /* USER CODE END I2C1_Init 0 */
+
+  /* USER CODE BEGIN I2C1_Init 1 */
+
+  /* USER CODE END I2C1_Init 1 */
+  hi2c1.Instance = I2C1;
+  hi2c1.Init.ClockSpeed = 100000;
+  hi2c1.Init.DutyCycle = I2C_DUTYCYCLE_2;
+  hi2c1.Init.OwnAddress1 = 0;
+  hi2c1.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
+  hi2c1.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
+  hi2c1.Init.OwnAddress2 = 0;
+  hi2c1.Init.GeneralCallMode = I2C_GENERALCALL_DISABLE;
+  hi2c1.Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
+  if (HAL_I2C_Init(&hi2c1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN I2C1_Init 2 */
+
+  /* USER CODE END I2C1_Init 2 */
+
 }
 
 /**
@@ -389,7 +432,7 @@ void StartReciveTask(void *argument)
 	  	 		  	 // Work with Recive data
 	  	 	  		 NRF24_Receive(RxData);
 	  //	         HAL_UART_Transmit(&huart2, RxData, strlen((char *)RxData), 1000); if you want see on UART data
-	  	 	  		 counter++;
+	  	 	  		 EEPROM_Write_NUM (6, 0, (float)counter++);
 	  	 	  	     printInt(counter, false);
 	  	 	  	  }
 
