@@ -61,8 +61,7 @@ static void MX_USART2_UART_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 uint8_t TxAddress[] = {0xEE,0xDD,0xCC,0xBB,0xAA};
-uint8_t TxDataAdd[] = "Add\n";
-uint8_t TxDataMinus[] = "Minus\n";
+uint8_t TxData[] = "Add\n";
 /* USER CODE END 0 */
 
 /**
@@ -102,8 +101,6 @@ int main(void)
 
   uint8_t buttonState = 0;
   uint8_t lastButtonState = 0;
-  uint8_t buttonState_2 = 0;
-  uint8_t lastButtonState_2 = 0;
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -117,39 +114,20 @@ int main(void)
 
 	  if (buttonState != lastButtonState) {
 
-		          HAL_Delay(50);
+		          HAL_Delay(30);
 
 	              buttonState = !HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_1);
 
 	              if (buttonState != lastButtonState) {
 
 	                  if (buttonState == GPIO_PIN_RESET) {
-	                	  NRF24_Transmit(TxDataAdd);
+	                	  NRF24_Transmit(TxData);
 	                  }
 
 	              }
 	          }
 
 	  lastButtonState = buttonState;
-
-	  buttonState_2 = !HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_10);
-
-	  	  if (buttonState_2 != lastButtonState_2) {
-
-	  		          HAL_Delay(50);
-
-	  		        buttonState_2 = !HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_10);
-
-	  	              if (buttonState_2 != lastButtonState_2) {
-
-	  	                  if (buttonState_2 == GPIO_PIN_RESET) {
-	  	                	  NRF24_Transmit(TxDataMinus);
-	  	                  }
-
-	  	              }
-	  	          }
-
-	  	  lastButtonState_2 = buttonState_2;
 
   }
   /* USER CODE END 3 */
@@ -301,8 +279,8 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : PB1 PB10 */
-  GPIO_InitStruct.Pin = GPIO_PIN_1|GPIO_PIN_10;
+  /*Configure GPIO pin : PB1 */
+  GPIO_InitStruct.Pin = GPIO_PIN_1;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_PULLDOWN;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
