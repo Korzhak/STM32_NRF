@@ -3054,8 +3054,8 @@ void StartReciveTask(void *argument)
  800143a:	f7ff fb57 	bl	8000aec <printInt>
 	  	 	  	  }
 
-    osDelay(10);
- 800143e:	200a      	movs	r0, #10
+    osDelay(50);
+ 800143e:	2032      	movs	r0, #50	@ 0x32
  8001440:	f003 fb8c 	bl	8004b5c <osDelay>
 	  if (isDataAvailable(2) == 1)
  8001444:	e7c4      	b.n	80013d0 <StartReciveTask+0x8>

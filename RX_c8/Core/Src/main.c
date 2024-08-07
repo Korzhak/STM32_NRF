@@ -62,7 +62,7 @@ osThreadId_t myReciveTaskHandle;
 const osThreadAttr_t myReciveTask_attributes = {
   .name = "myReciveTask",
   .stack_size = 128 * 4,
-  .priority = (osPriority_t) osPriorityBelowNormal,
+  .priority = (osPriority_t) osPriorityHigh,
 };
 /* Definitions for myLoopTask */
 osThreadId_t myLoopTaskHandle;
@@ -454,7 +454,7 @@ void StartReciveTask(void *argument)
 	  	 	  	     printInt(counter, false);
 	  	 	  	  }
 
-    osDelay(10);
+    osDelay(50);
   }
   /* USER CODE END StartReciveTask */
 }
