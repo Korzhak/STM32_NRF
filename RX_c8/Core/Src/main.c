@@ -62,7 +62,7 @@ osThreadId_t myReciveTaskHandle;
 const osThreadAttr_t myReciveTask_attributes = {
   .name = "myReciveTask",
   .stack_size = 128 * 4,
-  .priority = (osPriority_t) osPriorityBelowNormal,
+  .priority = (osPriority_t) osPriorityHigh,
 };
 /* Definitions for myLoopTask */
 osThreadId_t myLoopTaskHandle;
@@ -448,12 +448,13 @@ void StartReciveTask(void *argument)
 	  	 	  	  {
 	  	 		  	 // Work with Recive data
 	  	 	  		 NRF24_Receive(RxData);
+	  	 	  		 if (RxData[0] == 'A') EEPROM_Write_NUM (6, 0, (float)counter++);
+	  	 	  		 if (RxData[0] == 'M' && counter > 0) EEPROM_Write_NUM (6, 0, (float)counter--);
 	  //	         HAL_UART_Transmit(&huart2, RxData, strlen((char *)RxData), 1000); if you want see on UART data
-	  	 	  		 EEPROM_Write_NUM (6, 0, (float)counter++);
 	  	 	  	     printInt(counter, false);
 	  	 	  	  }
 
-    osDelay(10);
+    osDelay(50);
   }
   /* USER CODE END StartReciveTask */
 }
