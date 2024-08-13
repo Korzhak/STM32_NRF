@@ -449,7 +449,7 @@ void StartReciveTask(void *argument)
 	  	 		  	 // Work with Recive data
 	  	 	  		 NRF24_Receive(RxData);
 	  	 	  		 if (RxData[0] == 'A') EEPROM_Write_NUM (6, 0, (float)counter++);
-	  	 	  		 if (RxData[0] == 'M' && counter > 0) EEPROM_Write_NUM (6, 0, (float)counter--);
+	  	 	  		 //if (RxData[0] == 'M' && counter > 0) EEPROM_Write_NUM (6, 0, (float)counter--);
 	  //	         HAL_UART_Transmit(&huart2, RxData, strlen((char *)RxData), 1000); if you want see on UART data
 	  	 	  	     printInt(counter, false);
 	  	 	  	  }

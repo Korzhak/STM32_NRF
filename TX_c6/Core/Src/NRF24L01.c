@@ -27,11 +27,11 @@ int globalcounterSuccseful = 0;
 extern SPI_HandleTypeDef hspi1;
 #define NRF24_SPI &hspi1
 
-#define NRF24_CE_PORT   GPIOA
-#define NRF24_CE_PIN    GPIO_PIN_4
+#define NRF24_CE_PORT   GPIOB
+#define NRF24_CE_PIN    GPIO_PIN_0
 
-#define NRF24_CSN_PORT   GPIOB
-#define NRF24_CSN_PIN    GPIO_PIN_0
+#define NRF24_CSN_PORT   GPIOA
+#define NRF24_CSN_PIN    GPIO_PIN_4
 
 
 
