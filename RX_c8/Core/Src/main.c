@@ -62,7 +62,7 @@ osThreadId_t myReciveTaskHandle;
 const osThreadAttr_t myReciveTask_attributes = {
   .name = "myReciveTask",
   .stack_size = 128 * 4,
-  .priority = (osPriority_t) osPriorityHigh,
+  .priority = (osPriority_t) osPriorityRealtime,
 };
 /* Definitions for myLoopTask */
 osThreadId_t myLoopTaskHandle;
@@ -104,7 +104,6 @@ void StartTaskBtn(void *argument);
 
 uint8_t RxAddress[] = {0x00,0xDD,0xCC,0xBB,0xAA};
 uint8_t RxData[32];
-
 
 uint8_t data[50];
 /* USER CODE END 0 */
@@ -148,7 +147,11 @@ int main(void)
 
   NRF24_ReadAll(data);
 
-  setUp(&ledStruct, GPIO_PIN_11, GPIOA, GPIO_PIN_10, GPIOA, GPIO_PIN_9, GPIOA);
+  // SETTING UP OF LIBRARY
+  //                 SCLK PIN   SCLK Port   RCLK PIN   RCLK Port   DIO PIN   DIO PORT
+  setUp(&ledStruct, GPIO_PIN_11, GPIOB, GPIO_PIN_13, GPIOB,        GPIO_PIN_1, GPIOB);
+
+//  setUp(&ledStruct, GPIO_PIN_15, GPIOB, GPIO_PIN_14, GPIOB, GPIO_PIN_13, GPIOB);
 
   counter = (int)EEPROM_Read_NUM (6, 0);
 
@@ -373,10 +376,10 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4|GPIO_PIN_9|GPIO_PIN_10|GPIO_PIN_11, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0|GPIO_PIN_1|GPIO_PIN_11|GPIO_PIN_13, GPIO_PIN_RESET);
 
   /*Configure GPIO pin : PA4 */
   GPIO_InitStruct.Pin = GPIO_PIN_4;
@@ -392,18 +395,18 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : PA9 PA10 PA11 */
-  GPIO_InitStruct.Pin = GPIO_PIN_9|GPIO_PIN_10|GPIO_PIN_11;
+  /*Configure GPIO pins : PB1 PB11 PB13 */
+  GPIO_InitStruct.Pin = GPIO_PIN_1|GPIO_PIN_11|GPIO_PIN_13;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_PULLDOWN;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : PB5 */
-  GPIO_InitStruct.Pin = GPIO_PIN_5;
+  /*Configure GPIO pins : PA8 PA9 */
+  GPIO_InitStruct.Pin = GPIO_PIN_8|GPIO_PIN_9;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_PULLDOWN;
-  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
 /* USER CODE BEGIN MX_GPIO_Init_2 */
 /* USER CODE END MX_GPIO_Init_2 */
@@ -445,16 +448,13 @@ void StartReciveTask(void *argument)
   for(;;)
   {
 	  if (isDataAvailable(2) == 1)
-	  	 	  	  {
-	  	 		  	 // Work with Recive data
-	  	 	  		 NRF24_Receive(RxData);
-	  	 	  		 if (RxData[0] == 'A') EEPROM_Write_NUM (6, 0, (float)counter++);
-	  	 	  		 //if (RxData[0] == 'M' && counter > 0) EEPROM_Write_NUM (6, 0, (float)counter--);
-	  //	         HAL_UART_Transmit(&huart2, RxData, strlen((char *)RxData), 1000); if you want see on UART data
-	  	 	  	     printInt(counter, false);
-	  	 	  	  }
+	  	  {
+	  		 NRF24_Receive(RxData);
+	  		 if (RxData[0] == 'A') EEPROM_Write_NUM (6, 0, (float)++counter);
 
-    osDelay(50);
+	  	  }
+	printInt(counter, false);
+    osDelay(10);
   }
   /* USER CODE END StartReciveTask */
 }
@@ -492,16 +492,48 @@ void StartTaskBtn(void *argument)
   /* USER CODE BEGIN StartTaskBtn */
   /* Infinite loop */
   uint8_t i = 0;
-  uint8_t btn_state_now;
-  uint8_t btn_state_them;
+  uint8_t i_Add = 0;
+  uint8_t i_Minus = 0;
+  uint8_t btn_state_now_Add;
+  uint8_t btn_state_now_Minus;
+  uint8_t btn_state_them_Add;
+  uint8_t btn_state_them_Minus;
   for(;;)
   {
-	btn_state_now = HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_5);
+	btn_state_now_Add = HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_8);
+	btn_state_now_Minus = HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_9);
 	osDelay(20);
-	btn_state_them = HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_5);
-	if (btn_state_now == btn_state_them && btn_state_now + btn_state_them == 2){
+	btn_state_them_Add = HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_8);
+	btn_state_them_Minus = HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_9);
+
+	if (btn_state_now_Add == btn_state_them_Add && btn_state_now_Add + btn_state_them_Add == 2){
+		i_Add++;
+				if(i_Add == 5){
+					EEPROM_Write_NUM (6, 0, (float)counter++);
+					printInt(counter, false);
+				}
+	}
+
+	else {
+			i_Add = 0;
+		}
+
+	if (btn_state_now_Minus == btn_state_them_Minus && btn_state_now_Minus + btn_state_them_Minus == 2){
+		i_Minus++;
+						if(i_Minus == 5){
+							EEPROM_Write_NUM (6, 0, (float)counter--);
+							printInt(counter, false);
+						}
+	}
+
+	else {
+			i_Minus = 0;
+		}
+
+	if (btn_state_now_Add == btn_state_them_Add && btn_state_now_Minus == btn_state_them_Minus && btn_state_now_Add
+			+ btn_state_them_Add + btn_state_them_Minus + btn_state_now_Minus == 4){
 		i++;
-		if(i == 50){
+		if(i == 250){
 			EEPROM_Write_NUM (6, 0, 0.0);
 			i = 0, counter = 0;
 			printInt(counter, false);

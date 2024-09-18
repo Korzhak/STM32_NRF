@@ -99,6 +99,7 @@ int main(void)
   NRF24_Init();
   NRF24_TxMode(TxAddress, 10);
 
+  uint8_t i = 0;
   uint8_t buttonState = 0;
   uint8_t lastButtonState = 0;
   /* USER CODE END 2 */
@@ -110,24 +111,18 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  buttonState = !HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_1);
 
-	  if (buttonState != lastButtonState) {
+	  buttonState = HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_14);
+	  HAL_Delay(20);
+	  lastButtonState = HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_14);
 
-		          HAL_Delay(30);
-
-	              buttonState = !HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_1);
-
-	              if (buttonState != lastButtonState) {
-
-	                  if (buttonState == GPIO_PIN_RESET) {
-	                	  NRF24_Transmit(TxData);
-	                  }
-
-	              }
-	          }
-
-	  lastButtonState = buttonState;
+	  if (buttonState == lastButtonState && buttonState + lastButtonState == 2){
+	  		i++;
+	  		if(i == 5) NRF24_Transmit(TxData);
+	  	}
+	  	else {
+	  		i = 0;
+	  	}
 
   }
   /* USER CODE END 3 */
