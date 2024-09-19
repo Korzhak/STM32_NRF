@@ -80,6 +80,7 @@ const osThreadAttr_t myTaskBtn_attributes = {
 };
 /* USER CODE BEGIN PV */
 LED74HC595 ledStruct;
+
 int counter = 0;
 /* USER CODE END PV */
 
@@ -104,7 +105,6 @@ void StartTaskBtn(void *argument);
 
 uint8_t RxAddress[] = {0x00,0xDD,0xCC,0xBB,0xAA};
 uint8_t RxData[32];
-
 uint8_t data[50];
 /* USER CODE END 0 */
 
@@ -151,10 +151,7 @@ int main(void)
   //                 SCLK PIN   SCLK Port   RCLK PIN   RCLK Port   DIO PIN   DIO PORT
   setUp(&ledStruct, GPIO_PIN_11, GPIOB, GPIO_PIN_13, GPIOB,        GPIO_PIN_1, GPIOB);
 
-//  setUp(&ledStruct, GPIO_PIN_15, GPIOB, GPIO_PIN_14, GPIOB, GPIO_PIN_13, GPIOB);
-
   counter = (int)EEPROM_Read_NUM (6, 0);
-
 
   /* USER CODE END 2 */
 
@@ -472,10 +469,8 @@ void StartLoopTask(void *argument)
   /* Infinite loop */
   for(;;)
   {
-
 	  for(int i = 0;i < 1000; i++) loop();
-
-    osDelay(1);
+      osDelay(1);
   }
   /* USER CODE END StartLoopTask */
 }
