@@ -1,4 +1,4 @@
-[English](REAMDE.md) | **[Українська](README_UA.md)**
+[English](README.md) | **[Українська](README_UA.md)**
 
 # Проект лічильника одиниць за допомогою передачі через NRF24 на базі STM32
 
