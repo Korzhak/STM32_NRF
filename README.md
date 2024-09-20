@@ -150,7 +150,7 @@ extern I2C_HandleTypeDef hi2c1;
    
    - Connect STM32BluePill to Breadboard and SS-5GL: `3.3V - +`, `GND - -`, `PB1 - Breadboard`
 
-   - STM32BluePill to MH-CD42: `OUT - 5V`, `GND - GND`, `BAT - Batbattery+`, `GND - Batbattery-`, `Power+ - Vin`, `Power- - GND`  
+   - STM32BluePill to MH-CD42: `OUT - 5V`, `GND - GND`, `BAT - Batbattery+`, `GND - Batbattery-`, `Power+ - Vin`, `Power- - GND`
 
    ![](img/TX.bmp)
 
