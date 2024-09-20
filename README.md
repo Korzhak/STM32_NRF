@@ -1,4 +1,4 @@
-[English](REAMDE.md) | **[Українська](README_UA.md)**
+**[English](README.md)** | [Українська](README_UA.md)
 
 # Unit counter project via NRF24 based on STM32
 
