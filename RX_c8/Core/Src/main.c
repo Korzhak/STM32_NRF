@@ -503,7 +503,7 @@ void StartTaskBtn(void *argument)
 
 	if (btn_state_now_Add == btn_state_them_Add && btn_state_now_Add + btn_state_them_Add == 2){
 		i_Add++;
-				if(i_Add == 5){
+				if(i_Add == 20){
 					EEPROM_Write_NUM (6, 0, (float)++counter);
 					printInt(counter, false);
 				}
@@ -515,7 +515,7 @@ void StartTaskBtn(void *argument)
 
 	if (btn_state_now_Minus == btn_state_them_Minus && btn_state_now_Minus + btn_state_them_Minus == 2){
 		i_Minus++;
-						if(i_Minus == 5){
+						if(i_Minus == 20 && counter > 0){
 							EEPROM_Write_NUM (6, 0, (float)--counter);
 							printInt(counter, false);
 						}
@@ -528,7 +528,7 @@ void StartTaskBtn(void *argument)
 	if (btn_state_now_Add == btn_state_them_Add && btn_state_now_Minus == btn_state_them_Minus && btn_state_now_Add
 			+ btn_state_them_Add + btn_state_them_Minus + btn_state_now_Minus == 4){
 		i++;
-		if(i == 250){
+		if(i == 50){
 			EEPROM_Write_NUM (6, 0, 0.0);
 			i = 0, counter = 0;
 			printInt(counter, false);
